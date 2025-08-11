@@ -5,6 +5,29 @@
   <title>Donation | Lambodhara Youth Association</title>
   <link rel="stylesheet" href="donation.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .qr-code {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+    }
+    .upi-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .upi-icons img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .upi-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <section class="donation-container">
@@ -12,12 +35,22 @@
     <p class="donation-text">
       Your generous donation supports our Ganesh Utsav and community celebrations. Thank you for being a part of our spiritual journey.
     </p>
+
     <!-- QR + UPI Pay Section -->
     <div class="payment-section">
       <h3>📲 Scan & Pay via UPI</h3>
       <img src="qr.jpg" alt="Donate QR Code" class="qr-code">
       <p>Scan the above QR using PhonePe / GPay / Paytm or click an icon below:</p>
 
+      <div class="upi-icons">
+        <a href="upi://pay?pa=6281655826-2@ybl&cu=INR" target="_blank">
+          <img src="phonepe.png" alt="PhonePe">
+        </a>
+        <a href="upi://pay?pa=6281655826-2@ybl&cu=INR" target="_blank">
+          <img src="gpay.jpeg" alt="Google Pay">
+        </a>
+        <a href="upi://pay?pa=6281655826-2@ybl&cu=INR" target="_blank">
+          <img src="paytm.png" alt="Paytm">
         </a>
       </div>
     </div>
